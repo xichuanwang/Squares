@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	
+	<body>
+
+		<img id="output" src=""/>
+
+		<script src="//localhost:35729/livereload.js"></script>
+		<script src="scripts/squares.js"></script>
+		<script>
+			var img = document.querySelector( '#output' );
+			var sq = new Squares( 500, 100, '#00ff00', '#ff00ff', 0.5, 'horizontal' );
+			var src = sq.draw( );
+			img.src = src;
+
+		</script>
+	</body>
+</html>
